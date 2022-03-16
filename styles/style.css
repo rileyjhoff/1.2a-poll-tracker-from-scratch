@@ -148,6 +148,10 @@ form label {
     text-align: center;
 }
 
+.poll * {
+    margin: 5px;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;

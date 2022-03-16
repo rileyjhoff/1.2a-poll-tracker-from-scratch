@@ -41,22 +41,22 @@ submitButton.addEventListener('submit', () => {
 
 optionOneAddButton.addEventListener('click', () => {
     option1Votes++;
-
+    displayCurrentPoll();
 });
 
 optionOneSubtractButton.addEventListener('click', () => {
     option1Votes--;
-
+    displayCurrentPoll();
 });
 
 optionTwoAddButton.addEventListener('click', () => {
     option2Votes++;
-
+    displayCurrentPoll();
 });
 
 optionTwoSubtractButton.addEventListener('click', () => {
     option2Votes--;
-
+    displayCurrentPoll();
 });
 
 publishButton.addEventListener('click', () => {
@@ -64,7 +64,16 @@ publishButton.addEventListener('click', () => {
 });
 
 function displayCurrentPoll() {
+    currentPollEl.textContent = '';
 
+    optionOneLabel.textContent = option1Name;
+    optionTwoLabel.textContent = option2Name;
+
+    const pollEl = renderPoll(pollQuestion, option1Name, option2Name, option1Votes, option2Votes);
+
+    pollEl.classList.add('current');
+
+    currentPollEl.append(pollEl);
 }
 
 function displayAllPolls() {

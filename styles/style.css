@@ -103,8 +103,9 @@ h4 {
 
 form {
     height: 300px;
-    padding-left: var(--gutter);
-    padding-right: var(--gutter);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
 }
 
 form label {

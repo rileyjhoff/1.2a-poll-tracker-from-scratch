@@ -25,15 +25,15 @@
                 <form action="">
                     <label for="">
                         Question:
-                        <input type="text">
+                        <input name="poll" id="poll-question-name">
                     </label>
                     <label for="">
                         First Option:
-                        <input type="text">
+                        <input name="one" id="option-one-name">
                     </label>
                     <label for="">
                         Second Option:
-                        <input type="text">
+                        <input type="two" id="option-two-name">
                     </label>
                     <div class="form-button-div">
                         <button class="form-button">Submit</button>
@@ -41,25 +41,25 @@
                 </form>
             </div>
             <div class="poll-div">
-                <h2 id="poll-name">Current Poll</h2>
+                <h2 id="poll-question-label">Current Poll</h2>
                 <div class="current-poll-container">
 
                 </div>
                 <div class="buttons">
                     <div class="top-buttons">
                         <div class="left-buttons">
-                            <h4>Option One</h4>
-                            <button>+</button>
-                            <button>-</button>
+                            <h4 id="option-one-label">Option One</h4>
+                            <button id="option-one-add">+</button>
+                            <button id="option-one-subtract">-</button>
                         </div>
                         <div class="right-buttons">
-                            <h4>Option Two</h4>
-                            <button>+</button>
-                            <button>-</button>
+                            <h4 id="option-two-label">Option Two</h4>
+                            <button id="option-two-add">+</button>
+                            <button id="option-two-subtract">-</button>
                         </div>
                     </div>
                     <div class="bottom-buttons">
-                        <button>Finish Poll</button>
+                        <button id="publish-poll">Publish Poll</button>
                     </div>
                 </div>
             </div>

@@ -35,10 +35,8 @@ Additional considerations:
 - two sections to split main into a top and bottom half
   - how? display: grid;
 - two divs to split the top half into a left and right quarter of the page
-  - how? display: grid;
 - two divs to split the top right quarter into a top and bottom half
   - why? top half will be where the current poll state is displayed
-  - how? display: grid;
 - two divs in the bottom half of the top right quarter
   - why? this is where the user will be able to click increment and decrement buttons
   - how? display: flex;
@@ -49,10 +47,29 @@ Additional considerations:
     - why? to create the poll
 - close poll button
   - why? to move current poll to the past poll section and clear the current poll area
-- 
+
 ## Events
 
+- user inputs poll question and options
+  - event listener to store input values
+- user increments or decrements options
+  - event listener to increment or decrement state
+  - update the DOM to reflect current state
+- user clicks publish poll
+  - clear current and past poll divs - append all past polls to past poll div
+
 ## Order
+
+- write necessary HTML elements
+- style HTML and validate with borders
+- set state
+- grab DOM elements
+- write renderPoll function
+- grab DOM elements
+- declare renderPoll function
+- declare displayCurrentPoll function
+- declare displayAllPolls function
+- declare event listeners
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |

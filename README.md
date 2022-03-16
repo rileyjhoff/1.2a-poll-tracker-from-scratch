@@ -26,6 +26,34 @@ Additional considerations:
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
 
+## Plan
+
+![wireframes](/assets/wireframe.png)
+
+## HTML Elements
+
+- two sections to split main into a top and bottom half
+  - how? display: grid;
+- two divs to split the top half into a left and right quarter of the page
+  - how? display: grid;
+- two divs to split the top right quarter into a top and bottom half
+  - why? top half will be where the current poll state is displayed
+  - how? display: grid;
+- two divs in the bottom half of the top right quarter
+  - why? this is where the user will be able to click increment and decrement buttons
+  - how? display: flex;
+- form?
+  - three inputs
+    - why? one for a question and two for options
+  - submit button
+    - why? to create the poll
+- close poll button
+  - why? to move current poll to the past poll section and clear the current poll area
+- 
+## Events
+
+## Order
+
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
 | Visit the deployed pages on GitHub pages, with link in the About section of the Github repo|        2 |

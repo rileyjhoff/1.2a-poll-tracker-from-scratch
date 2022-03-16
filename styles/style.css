@@ -32,25 +32,20 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     margin-bottom: calc(var(--footer-height));
 }
 
 section {
     background-color: var(--color5);
-    max-width: 80%;
-    display: flex;
+    max-width: 100%;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    margin: var(--gutter);
 }
 
 header {
@@ -65,6 +60,7 @@ header {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    margin: 0;
 }
 
 .gutter-right {
@@ -78,7 +74,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +84,109 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+h4 {
+    margin: 5px;
+}
+
+.top-section {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-div {
+    max-height: 100%;
+    border: solid 2px black;
+}
+
+form {
+    height: 300px;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.form-button-div {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#form-header {
+    text-align: center;
+}
+
+.poll-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px black;
+    border-left: 0px;
+}
+
+.current-poll-container {
+    display: flex;
+    justify-content: center;
+}
+
+.poll {
+    border: solid 1px black;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.top-buttons {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.top-buttons button {
+    width: 30px;
+}
+
+.right-buttons, .left-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.bottom-buttons {
+    padding: 20px;
+}
+
+.bottom-section {
+    border: solid 2px black;
+}
+
+.past-polls-header {
+    text-align: center;
+}
+
+.past-polls-container {
+    display: flex;
+    flex-flow: wrap;
 }

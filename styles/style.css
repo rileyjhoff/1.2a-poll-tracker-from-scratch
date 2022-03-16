@@ -101,18 +101,20 @@ h4 {
     border: solid 2px black;
 }
 
-form {
+/* form {
     height: 300px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
-}
+} */
 
-form label {
+.form-div label {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .form-button-div {

@@ -22,7 +22,7 @@
         <section class="top-section">
             <div class="form-div">
                 <h3 id="form-header">Enter your poll question and options below:</h3>
-                <form action="">
+                <!-- <form action=""> -->
                     <label for="">
                         Question:
                         <input name="poll" id="poll-question-name">
@@ -38,7 +38,7 @@
                     <div class="form-button-div">
                         <button class="form-button">Submit</button>
                     </div>
-                </form>
+                <!-- </form> -->
             </div>
             <div class="poll-div">
                 <h2 id="poll-question-label">Current Poll</h2>
@@ -49,17 +49,17 @@
                     <div class="top-buttons">
                         <div class="left-buttons">
                             <h4 id="option-one-label">Option One</h4>
-                            <button id="option-one-add">+</button>
-                            <button id="option-one-subtract">-</button>
+                            <button id="option-one-add" disabled>+</button>
+                            <button id="option-one-subtract" disabled>-</button>
                         </div>
                         <div class="right-buttons">
                             <h4 id="option-two-label">Option Two</h4>
-                            <button id="option-two-add">+</button>
-                            <button id="option-two-subtract">-</button>
+                            <button id="option-two-add" disabled>+</button>
+                            <button id="option-two-subtract" disabled>-</button>
                         </div>
                     </div>
                     <div class="bottom-buttons">
-                        <button id="publish-poll">Publish Poll</button>
+                        <button id="publish-poll" disabled>Publish Poll</button>
                     </div>
                 </div>
             </div>

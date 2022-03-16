@@ -35,8 +35,15 @@ let pastPolls = [];
     // use user input to update state
     // update DOM to reflect the new state
 
-submitButton.addEventListener('submit', () => {
-
+submitButton.addEventListener('click', () => {
+    pollQuestion = pollName.value;
+    option1Name = optionOneName.value;
+    option2Name = optionTwoName.value;
+    pollName.value = '';
+    optionOneName.value = '';
+    optionTwoName.value = '';
+    displayCurrentPoll();
+    turnOnPollButtons();
 });
 
 optionOneAddButton.addEventListener('click', () => {
@@ -63,6 +70,7 @@ publishButton.addEventListener('click', () => {
     let pollHistory = { question:pollQuestion, option1Name:option1Name, option2Name:option2Name, option1Votes, option2Votes };
     pastPolls.push(pollHistory);
     displayAllPolls();
+    turnOffPollButtons();
 });
 
 function displayCurrentPoll() {
@@ -97,4 +105,22 @@ function displayAllPolls() {
     option2Votes = 0;
     optionOneLabel.textContent = 'Option One';
     optionTwoLabel.textContent = 'Option Two';
+}
+
+function turnOnPollButtons() {
+    publishButton.disabled = false;
+    optionOneAddButton.disabled = false;
+    optionOneSubtractButton.disabled = false;
+    optionTwoAddButton.disabled = false;
+    optionTwoSubtractButton.disabled = false;
+    submitButton.disabled = true;
+}
+
+function turnOffPollButtons() {
+    publishButton.disabled = true;
+    optionOneAddButton.disabled = true;
+    optionOneSubtractButton.disabled = true;
+    optionTwoAddButton.disabled = true;
+    optionTwoSubtractButton.disabled = true;
+    submitButton.disabled = false;
 }

@@ -91,6 +91,7 @@ function displayAllPolls() {
         option1Votes = poll.option1Votes;
         option2Votes = poll.option2Votes;
         let pollHistoryDiv = renderPoll(pollQuestion, option1Name, option2Name, option1Votes, option2Votes);
+        pollHistoryDiv.classList.add('past');
         pastPollEl.append(pollHistoryDiv);
     }
     currentPollEl.textContent = '';

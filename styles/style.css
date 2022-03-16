@@ -33,7 +33,7 @@ body {
 
 main {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 400px 1fr;
     margin-bottom: calc(var(--footer-height));
 }
 

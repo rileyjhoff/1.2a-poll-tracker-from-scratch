@@ -60,7 +60,9 @@ optionTwoSubtractButton.addEventListener('click', () => {
 });
 
 publishButton.addEventListener('click', () => {
-
+    let pollHistory = { question:pollQuestion, option1Name:option1Name, option2Name:option2Name, option1Votes, option2Votes };
+    pastPolls.push(pollHistory);
+    displayAllPolls();
 });
 
 function displayCurrentPoll() {
@@ -77,5 +79,22 @@ function displayCurrentPoll() {
 }
 
 function displayAllPolls() {
-
+    pastPollEl.textContent = '';
+    for (let poll of pastPolls) {
+        pollQuestion = poll.question;
+        option1Name = poll.option1Name;
+        option2Name = poll.option2Name;
+        option1Votes = poll.option1Votes;
+        option2Votes = poll.option2Votes;
+        let pollHistoryDiv = renderPoll(pollQuestion, option1Name, option2Name, option1Votes, option2Votes);
+        pastPollEl.append(pollHistoryDiv);
+    }
+    currentPollEl.textContent = '';
+    pollQuestion = '';
+    option1Name = '';
+    option2Name = '';
+    option1Votes = 0;
+    option2Votes = 0;
+    optionOneLabel.textContent = 'Option One';
+    optionTwoLabel.textContent = 'Option Two';
 }

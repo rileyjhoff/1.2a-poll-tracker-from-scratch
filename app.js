@@ -15,12 +15,8 @@ const optionTwoAddButton = document.querySelector('#option-two-add');
 const optionTwoSubtractButton = document.querySelector('#option-two-subtract');
 const publishButton = document.querySelector('#publish-poll');
 
-const pollQuestionLabel = document.querySelector('#poll-question-label');
 const optionOneLabel = document.querySelector('#option-one-label');
 const optionTwoLabel = document.querySelector('#option-two-label');
-
-console.log(currentPollEl, pastPollEl, pollName, optionOneName, optionTwoName, submitButton, optionOneAddButton);
-console.log(optionTwoAddButton, optionOneSubtractButton, optionTwoSubtractButton, publishButton, pollQuestionLabel, optionOneLabel, optionTwoLabel);
 
 // let state
 let pollQuestion = '';

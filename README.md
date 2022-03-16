@@ -67,7 +67,7 @@ Additional considerations:
 - declare renderPoll function
 - declare displayCurrentPoll function
 - declare displayAllPolls function
-- declare event listeners
+- declare event listeners.
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |

@@ -64,8 +64,6 @@ Additional considerations:
 - style HTML and validate with borders
 - set state
 - grab DOM elements
-- write renderPoll function
-- grab DOM elements
 - declare renderPoll function
 - declare displayCurrentPoll function
 - declare displayAllPolls function

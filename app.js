@@ -1,4 +1,6 @@
 // import functions and grab DOM elements
+import { renderPoll } from './render-utils.js';
+
 const currentPollEl = document.querySelector('.current-poll-container');
 const pastPollEl = document.querySelector('.past-polls-container');
 
@@ -21,9 +23,9 @@ console.log(currentPollEl, pastPollEl, pollName, optionOneName, optionTwoName, s
 console.log(optionTwoAddButton, optionOneSubtractButton, optionTwoSubtractButton, publishButton, pollQuestionLabel, optionOneLabel, optionTwoLabel);
 
 // let state
-let question = '';
-let option1 = '';
-let option2 = '';
+let pollQuestion = '';
+let option1Name = '';
+let option2Name = '';
 let option1Votes = 0;
 let option2Votes = 0;
 let pastPolls = [];
@@ -32,3 +34,39 @@ let pastPolls = [];
     // get user input
     // use user input to update state
     // update DOM to reflect the new state
+
+submitButton.addEventListener('submit', () => {
+
+});
+
+optionOneAddButton.addEventListener('click', () => {
+    option1Votes++;
+
+});
+
+optionOneSubtractButton.addEventListener('click', () => {
+    option1Votes--;
+
+});
+
+optionTwoAddButton.addEventListener('click', () => {
+    option2Votes++;
+
+});
+
+optionTwoSubtractButton.addEventListener('click', () => {
+    option2Votes--;
+
+});
+
+publishButton.addEventListener('click', () => {
+
+});
+
+function displayCurrentPoll() {
+
+}
+
+function displayAllPolls() {
+
+}
